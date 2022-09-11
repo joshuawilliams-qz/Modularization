@@ -1,4 +1,4 @@
-package com.example.terms
+package com.example.terms.save
 
 interface SaveTermShim {
 

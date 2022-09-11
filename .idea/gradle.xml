@@ -23,7 +23,9 @@
             <option value="$PROJECT_DIR$/foundation/provider" />
             <option value="$PROJECT_DIR$/foundation/resources" />
             <option value="$PROJECT_DIR$/infra" />
-            <option value="$PROJECT_DIR$/infra/repository" />
+            <option value="$PROJECT_DIR$/infra/domain" />
+            <option value="$PROJECT_DIR$/infra/domain/repository" />
+            <option value="$PROJECT_DIR$/infra/use-case" />
           </set>
         </option>
       </GradleProjectSettings>

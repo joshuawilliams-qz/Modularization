@@ -1,0 +1,43 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.terms"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="33"
+8-->/Users/joshuawilliams/Documents/GitHub/Modularization/features/terms/save/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->/Users/joshuawilliams/Documents/GitHub/Modularization/features/terms/save/src/main/AndroidManifest.xml
+10
+11    <application
+11-->[com.google.android.material:material:1.6.1] /Users/joshuawilliams/.gradle/caches/transforms-3/5ecf78887d09c8d5772bfd0d13860753/transformed/material-1.6.1/AndroidManifest.xml:24:5-20
+12        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+12-->[androidx.core:core:1.7.0] /Users/joshuawilliams/.gradle/caches/transforms-3/d409417959c78fbf29d76ceae9660126/transformed/core-1.7.0/AndroidManifest.xml:24:18-86
+13        android:debuggable="true"
+14        android:extractNativeLibs="false"
+15        android:testOnly="true" >
+16        <provider
+16-->[androidx.emoji2:emoji2:1.0.0] /Users/joshuawilliams/.gradle/caches/transforms-3/734f58e2c86c6d5146967ec2afef1295/transformed/emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
+17            android:name="androidx.startup.InitializationProvider"
+17-->[androidx.emoji2:emoji2:1.0.0] /Users/joshuawilliams/.gradle/caches/transforms-3/734f58e2c86c6d5146967ec2afef1295/transformed/emoji2-1.0.0/AndroidManifest.xml:27:13-67
+18            android:authorities="com.example.terms.androidx-startup"
+18-->[androidx.emoji2:emoji2:1.0.0] /Users/joshuawilliams/.gradle/caches/transforms-3/734f58e2c86c6d5146967ec2afef1295/transformed/emoji2-1.0.0/AndroidManifest.xml:28:13-68
+19            android:exported="false" >
+19-->[androidx.emoji2:emoji2:1.0.0] /Users/joshuawilliams/.gradle/caches/transforms-3/734f58e2c86c6d5146967ec2afef1295/transformed/emoji2-1.0.0/AndroidManifest.xml:29:13-37
+20            <meta-data
+20-->[androidx.emoji2:emoji2:1.0.0] /Users/joshuawilliams/.gradle/caches/transforms-3/734f58e2c86c6d5146967ec2afef1295/transformed/emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
+21                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+21-->[androidx.emoji2:emoji2:1.0.0] /Users/joshuawilliams/.gradle/caches/transforms-3/734f58e2c86c6d5146967ec2afef1295/transformed/emoji2-1.0.0/AndroidManifest.xml:32:17-75
+22                android:value="androidx.startup" />
+22-->[androidx.emoji2:emoji2:1.0.0] /Users/joshuawilliams/.gradle/caches/transforms-3/734f58e2c86c6d5146967ec2afef1295/transformed/emoji2-1.0.0/AndroidManifest.xml:33:17-49
+23            <meta-data
+23-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/joshuawilliams/.gradle/caches/transforms-3/6678309a7758632c841a28fcb65493d4/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
+24                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+24-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/joshuawilliams/.gradle/caches/transforms-3/6678309a7758632c841a28fcb65493d4/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
+25                android:value="androidx.startup" />
+25-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/joshuawilliams/.gradle/caches/transforms-3/6678309a7758632c841a28fcb65493d4/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
+26        </provider>
+27    </application>
+28
+29</manifest>

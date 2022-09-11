@@ -30,6 +30,6 @@ android {
 }
 
 dependencies {
-    implementation project(":infra:repository")
+    implementation project(":infra:domain:repository")
     implementation project(":foundation:provider")
 }

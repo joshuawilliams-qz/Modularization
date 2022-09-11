@@ -7,19 +7,32 @@ import com.example.cache.SessionCache
 import com.example.di.Dependencies
 import com.example.provider.Provider
 import com.example.repository.TermsRepositoryImpl
-import com.example.terms.SaveTermFragment
-import kotlinx.coroutines.flow.Flow
+import com.example.repository.UserRepository
+import com.example.terms.list.ListTermsUseCaseImpl
+import com.example.terms.save.SaveTermFragment
+import com.example.usecase.GetTermsUseCase
+import com.example.usecase.GetUserUseCase
+import com.example.usecase.SaveTermUseCase
+import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.flow.MutableSharedFlow
-import kotlinx.coroutines.flow.flowOf
 
 class MainActivity : AppCompatActivity(), Provider<Dependencies> {
 
+    private val repository = TermsRepositoryImpl(
+        SessionCache(MutableSharedFlow(replay = 1, extraBufferCapacity = 1))
+    )
+
+    private lateinit var userRepository: UserRepository
+
+    private val getUserCase = GetUserUseCase(userRepository)
+
+    private val getTermsUseCase = GetTermsUseCase(repository)
+
     override val value: Dependencies by lazy {
         Dependencies(
-            TermsRepositoryImpl(
-                SessionCache(MutableSharedFlow(replay = 1, extraBufferCapacity = 1))
-            ),
-            SaveTermShimImpl(
+            listTermsUseCase = ListTermsUseCaseImpl(getUserCase, getTermsUseCase),
+            saveTermUseCase = SaveTermUseCase(repository, GlobalScope),
+            saveTermShim = SaveTermShimImpl(
                 supportFragmentManager
             )
         )

@@ -1,4 +1,4 @@
-package com.example.terms
+package com.example.terms.save
 
 import android.os.Bundle
 import android.view.View
@@ -7,9 +7,8 @@ import androidx.lifecycle.lifecycleScope
 import com.example.di.Dependencies
 import com.example.models.Term
 import com.example.provider.Provider
-import com.example.repository.TermsRepository
-import com.example.terms.databinding.SaveFragmentBinding
-import kotlinx.coroutines.flow.Flow
+import com.example.terms.save.databinding.SaveFragmentBinding
+import com.example.usecase.SaveTermUseCase
 import kotlinx.coroutines.launch
 
 class SaveTermFragment : Fragment(R.layout.save_fragment) {
@@ -17,8 +16,8 @@ class SaveTermFragment : Fragment(R.layout.save_fragment) {
     private val dependencies: Dependencies?
         get() = (activity as? Provider<Dependencies>)?.value
 
-    private val repository: TermsRepository?
-        get() = dependencies?.termsRepository as? TermsRepository
+    private val saveTermUseCase: SaveTermUseCase?
+        get() = dependencies?.saveTermUseCase as? SaveTermUseCase
 
     private val shim: SaveTermShim?
         get() = dependencies?.saveTermShim as? SaveTermShim
@@ -28,7 +27,7 @@ class SaveTermFragment : Fragment(R.layout.save_fragment) {
         SaveFragmentBinding.bind(view).apply {
             button.setOnClickListener {
                 lifecycleScope.launch {
-                    repository?.save(Term(editText.text.toString()))
+                    saveTermUseCase?.invoke(Term(editText.text.toString()))
                     shim?.onSaveTerm()
                 }
             }

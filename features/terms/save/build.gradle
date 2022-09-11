@@ -48,7 +48,7 @@ dependencies {
 
     implementation project(":features:infra:di")
 
-    implementation project(":infra:repository")
+    implementation project(":infra:use-case")
 
     implementation project(":foundation:models")
     implementation project(":foundation:provider")
