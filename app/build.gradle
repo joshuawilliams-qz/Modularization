@@ -47,9 +47,9 @@ dependencies {
 
     implementation project(":features:terms:save")
     implementation project(":features:terms:list")
-    implementation project(":features:infra:di")
+    implementation project(":features:core:di")
 
-    implementation project(":infra:domain")
+    implementation project(":infra:core")
     implementation project(":infra:use-case")
 
     implementation project(":foundation:provider")
