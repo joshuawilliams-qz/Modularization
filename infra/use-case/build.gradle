@@ -32,7 +32,7 @@ android {
 
 dependencies {
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4"
-    implementation project(":infra:domain")
+    implementation project(":infra:core")
 
     implementation project(":foundation:models")
 }

@@ -17,10 +17,10 @@ include ':app'
 
 include ':features:terms:save'
 include ':features:terms:list'
-include ':features:infra:di'
+include ':features:core:di'
 
-include ':infra:domain'
-include ':infra:domain:repository'
+include ':infra:core'
+include ':infra:core:repository'
 include ':infra:use-case'
 
 include ':foundation:resources'

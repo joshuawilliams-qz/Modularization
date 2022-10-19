@@ -6,7 +6,7 @@ import androidx.fragment.app.FragmentContainerView
 import com.example.cache.SessionCache
 import com.example.di.Dependencies
 import com.example.provider.Provider
-import com.example.repository.TermsRepositoryImpl
+import com.example.repository.CachedTermsRepository
 import com.example.repository.UserRepository
 import com.example.terms.list.ListTermsUseCaseImpl
 import com.example.terms.save.SaveTermFragment
@@ -18,7 +18,7 @@ import kotlinx.coroutines.flow.MutableSharedFlow
 
 class MainActivity : AppCompatActivity(), Provider<Dependencies> {
 
-    private val repository = TermsRepositoryImpl(
+    private val repository = CachedTermsRepository(
         SessionCache(MutableSharedFlow(replay = 1, extraBufferCapacity = 1))
     )
 

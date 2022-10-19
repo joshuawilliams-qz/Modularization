@@ -7,13 +7,14 @@
         <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="zulu-11" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/features" />
-            <option value="$PROJECT_DIR$/features/infra" />
-            <option value="$PROJECT_DIR$/features/infra/di" />
+            <option value="$PROJECT_DIR$/features/core" />
+            <option value="$PROJECT_DIR$/features/core/di" />
             <option value="$PROJECT_DIR$/features/terms" />
             <option value="$PROJECT_DIR$/features/terms/list" />
             <option value="$PROJECT_DIR$/features/terms/save" />
@@ -23,8 +24,8 @@
             <option value="$PROJECT_DIR$/foundation/provider" />
             <option value="$PROJECT_DIR$/foundation/resources" />
             <option value="$PROJECT_DIR$/infra" />
-            <option value="$PROJECT_DIR$/infra/domain" />
-            <option value="$PROJECT_DIR$/infra/domain/repository" />
+            <option value="$PROJECT_DIR$/infra/core" />
+            <option value="$PROJECT_DIR$/infra/core/repository" />
             <option value="$PROJECT_DIR$/infra/use-case" />
           </set>
         </option>
