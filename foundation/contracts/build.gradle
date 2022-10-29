@@ -4,6 +4,7 @@ plugins {
 }
 
 android {
+    namespace 'com.example.contracts'
     compileSdk 33
 
     defaultConfig {
@@ -11,6 +12,7 @@ android {
         targetSdk 33
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
     }
 
     buildTypes {
@@ -26,12 +28,9 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
-    namespace 'com.example.usecase'
 }
 
 dependencies {
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4"
-    implementation project(":infra:core")
-
-    implementation project(":foundation:contracts")
+    api project(':foundation:models')
 }

@@ -20,6 +20,7 @@
             <option value="$PROJECT_DIR$/features/terms/save" />
             <option value="$PROJECT_DIR$/foundation" />
             <option value="$PROJECT_DIR$/foundation/cache" />
+            <option value="$PROJECT_DIR$/foundation/contracts" />
             <option value="$PROJECT_DIR$/foundation/models" />
             <option value="$PROJECT_DIR$/foundation/provider" />
             <option value="$PROJECT_DIR$/foundation/resources" />

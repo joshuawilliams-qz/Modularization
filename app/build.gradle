@@ -57,4 +57,5 @@ dependencies {
     implementation project(":foundation:resources")
     implementation project(":foundation:models")
     implementation project(":foundation:cache")
+    implementation project(":foundation:contracts")
 }
