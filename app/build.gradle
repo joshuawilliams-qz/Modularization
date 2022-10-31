@@ -50,6 +50,7 @@ dependencies {
     implementation project(":features:terms:list")
     implementation project(":features:core:di")
 
+    implementation project(":infra:contracts")
     implementation project(":infra:core")
     implementation project(":infra:use-case")
 
@@ -57,5 +58,4 @@ dependencies {
     implementation project(":foundation:resources")
     implementation project(":foundation:models")
     implementation project(":foundation:cache")
-    implementation project(":foundation:contracts")
 }

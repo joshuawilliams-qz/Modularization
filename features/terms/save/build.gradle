@@ -49,6 +49,7 @@ dependencies {
 
     implementation project(":features:core:di")
 
-    implementation project(":foundation:contracts")
+    implementation project(":infra:contracts")
+
     implementation project(":foundation:provider")
 }
