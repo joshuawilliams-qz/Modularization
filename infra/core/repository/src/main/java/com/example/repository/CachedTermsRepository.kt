@@ -1,6 +1,7 @@
 package com.example.repository
 
 import com.example.cache.Cache
+import com.example.contracts.repository.TermsRepository
 import com.example.models.Term
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.firstOrNull
