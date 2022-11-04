@@ -33,6 +33,7 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    namespace 'com.example.terms.list'
 }
 
 dependencies {
@@ -49,8 +50,7 @@ dependencies {
     implementation project(":features:core:di")
 
     implementation project(":infra:core:repository")
-    implementation project(":infra:use-case")
+    implementation project(":infra:contracts")
 
-    implementation project(":foundation:models")
     implementation project(":foundation:provider")
 }

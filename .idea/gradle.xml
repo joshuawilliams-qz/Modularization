@@ -24,6 +24,7 @@
             <option value="$PROJECT_DIR$/foundation/provider" />
             <option value="$PROJECT_DIR$/foundation/resources" />
             <option value="$PROJECT_DIR$/infra" />
+            <option value="$PROJECT_DIR$/infra/contracts" />
             <option value="$PROJECT_DIR$/infra/core" />
             <option value="$PROJECT_DIR$/infra/core/repository" />
             <option value="$PROJECT_DIR$/infra/use-case" />

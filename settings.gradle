@@ -19,6 +19,7 @@ include ':features:terms:save'
 include ':features:terms:list'
 include ':features:core:di'
 
+include ':infra:contracts'
 include ':infra:core'
 include ':infra:core:repository'
 include ':infra:use-case'

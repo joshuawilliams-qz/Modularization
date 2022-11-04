@@ -4,11 +4,11 @@ import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
+import com.example.contracts.ISaveTermUseCase
 import com.example.di.Dependencies
 import com.example.models.Term
 import com.example.provider.Provider
 import com.example.terms.save.databinding.SaveFragmentBinding
-import com.example.usecase.SaveTermUseCase
 import kotlinx.coroutines.launch
 
 class SaveTermFragment : Fragment(R.layout.save_fragment) {
@@ -16,8 +16,8 @@ class SaveTermFragment : Fragment(R.layout.save_fragment) {
     private val dependencies: Dependencies?
         get() = (activity as? Provider<Dependencies>)?.value
 
-    private val saveTermUseCase: SaveTermUseCase?
-        get() = dependencies?.saveTermUseCase as? SaveTermUseCase
+    private val saveTermUseCase: ISaveTermUseCase?
+        get() = dependencies?.saveTermUseCase as? ISaveTermUseCase
 
     private val shim: SaveTermShim?
         get() = dependencies?.saveTermShim as? SaveTermShim

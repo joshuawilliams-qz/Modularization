@@ -8,7 +8,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.di.Dependencies
 import com.example.provider.Provider
 import com.example.terms.list.databinding.ListFragmentBinding
-import com.example.usecase.GetTermsUseCase
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
 

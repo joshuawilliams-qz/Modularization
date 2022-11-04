@@ -33,6 +33,7 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    namespace 'com.example.modularization'
 }
 
 dependencies {
@@ -49,6 +50,7 @@ dependencies {
     implementation project(":features:terms:list")
     implementation project(":features:core:di")
 
+    implementation project(":infra:contracts")
     implementation project(":infra:core")
     implementation project(":infra:use-case")
 
