@@ -1,8 +1,8 @@
 package com.example.usecase
 
-import com.example.contracts.IGetUserUseCase
+import com.example.contracts.usecase.IGetUserUseCase
 import com.example.models.User
-import com.example.repository.UserRepository
+import com.example.contracts.repository.UserRepository
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.filterNotNull
 

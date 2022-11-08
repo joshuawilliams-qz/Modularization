@@ -31,6 +31,6 @@ android {
 }
 
 dependencies {
-    implementation project(":infra:core:repository")
+    implementation project(":infra:contracts")
     implementation project(":foundation:provider")
 }

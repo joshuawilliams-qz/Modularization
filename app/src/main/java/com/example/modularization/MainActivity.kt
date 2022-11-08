@@ -7,7 +7,7 @@ import com.example.cache.SessionCache
 import com.example.di.Dependencies
 import com.example.provider.Provider
 import com.example.repository.CachedTermsRepository
-import com.example.repository.UserRepository
+import com.example.contracts.repository.UserRepository
 import com.example.terms.list.ListTermsUseCaseImpl
 import com.example.terms.save.SaveTermFragment
 import com.example.usecase.GetTermsUseCase

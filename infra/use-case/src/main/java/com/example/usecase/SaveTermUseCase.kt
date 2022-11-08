@@ -1,8 +1,8 @@
 package com.example.usecase
 
-import com.example.contracts.ISaveTermUseCase
+import com.example.contracts.usecase.ISaveTermUseCase
 import com.example.models.Term
-import com.example.repository.TermsRepository
+import com.example.contracts.repository.TermsRepository
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
 

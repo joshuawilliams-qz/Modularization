@@ -1,7 +1,7 @@
 package com.example.terms.list
 
-import com.example.contracts.IGetTermsUseCase
-import com.example.contracts.IGetUserUseCase
+import com.example.contracts.usecase.IGetTermsUseCase
+import com.example.contracts.usecase.IGetUserUseCase
 import com.example.models.Term
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.combine

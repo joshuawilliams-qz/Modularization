@@ -1,8 +1,8 @@
 package com.example.usecase
 
-import com.example.contracts.IGetTermsUseCase
+import com.example.contracts.usecase.IGetTermsUseCase
 import com.example.models.Term
-import com.example.repository.TermsRepository
+import com.example.contracts.repository.TermsRepository
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 

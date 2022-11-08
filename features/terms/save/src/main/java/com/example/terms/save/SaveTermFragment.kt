@@ -4,7 +4,7 @@ import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
-import com.example.contracts.ISaveTermUseCase
+import com.example.contracts.usecase.ISaveTermUseCase
 import com.example.di.Dependencies
 import com.example.models.Term
 import com.example.provider.Provider
